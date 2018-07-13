@@ -76,3 +76,21 @@ snippet L
 	LABEL ${1:label}="${2:value}"
 snippet l
 	LABEL ${1:label}="${2:value}"
+snippet terraform
+	RUN wget https://releases.hashicorp.com/terraform/0.11.7/terraform_0.11.7_linux_amd64.zip \
+	    && unzip terraform_0.11.7_linux_amd64.zip \
+	    && mv terraform /usr/bin/terraform \
+	    && rm terraform_0.11.7_linux_amd64.zip
+snippet packer
+	RUN wget https://releases.hashicorp.com/packer/1.2.4/packer_1.2.4_linux_amd64.zip \
+	    && unzip packer_1.2.4_linux_amd64.zip \
+	    && mv packer /usr/bin/packer \
+	    && rm packer_1.2.4_linux_amd64.zip
+snippet imagemagik
+	RUN apk --no-cache add \
+	    imagemagick
+snippet heroku
+	FROM node:latest
+	RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sh && rm -rf /var/lib/apt/lists/*
+
+	   
