@@ -15,6 +15,12 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'chase/vim-ansible-yaml'
+Plugin 'tpope/vim-fugitive'
+Plugin 'fatih/vim-go'
+Plugin 'c9s/helper.vim'
+Plugin 'c9s/treemenu.vim'
+Plugin 'c9s/vikube.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
