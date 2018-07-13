@@ -1,0 +1,54 @@
+[
+    {
+        "text": "curl -sSL https://cli.openfaas.com | sudo sh",
+        "date": "12 Jul 2018, 18:52:50"
+    },
+    {
+        "text": "https://releases.hashicorp.com/vault/0.10.3/vault_0.10.3_linux_amd64.zip",
+        "date": "12 Jul 2018, 18:51:57"
+    },
+    {
+        "text": "https://releases.hashicorp.com/packer/1.2.4/packer_1.2.4_linux_amd64.zip",
+        "date": "12 Jul 2018, 18:51:29"
+    },
+    {
+        "text": "https://releases.hashicorp.com/terraform/0.11.7/terraform_0.11.7_linux_amd64.zip",
+        "date": "12 Jul 2018, 18:50:16"
+    },
+    {
+        "text": "helm upgrade --reuse-values openfaas openfaas/openfaas \\\n    --set basic_auth=true",
+        "date": "12 Jul 2018, 16:37:34"
+    },
+    {
+        "text": "kubectl -n openfaas create secret generic basic-auth \\\n--from-literal=basic-auth-user=admin \\\n--from-literal=basic-auth-password=$password \n",
+        "date": "12 Jul 2018, 16:37:30"
+    },
+    {
+        "text": "password=$(head -c 12 /dev/urandom | shasum| cut -d' ' -f1)\n",
+        "date": "12 Jul 2018, 16:44:56"
+    },
+    {
+        "text": "helm repo update \\\n && helm upgrade openfaas --install openfaas/openfaas \\\n    --namespace openfaas  \\\n    --set functionNamespace=openfaas-fn\n",
+        "date": "12 Jul 2018, 16:43:58"
+    },
+    {
+        "text": "kubectl apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/namespaces.yml",
+        "date": "12 Jul 2018, 16:36:21"
+    },
+    {
+        "text": "gcloud container clusters get-credentials CLUSTER_NAME",
+        "date": "12 Jul 2018, 16:13:50"
+    },
+    {
+        "text": "gcloud container clusters create CLUSTER_NAME",
+        "date": "12 Jul 2018, 16:13:43"
+    },
+    {
+        "text": "gcloud config set project PROJECT_ID",
+        "date": "12 Jul 2018, 16:13:38"
+    },
+    {
+        "text": "gcloud config set compute/zone COMPUTE_ZONE",
+        "date": "12 Jul 2018, 16:13:33"
+    }
+]
